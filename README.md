@@ -1,7 +1,7 @@
 # react-todo-app
 A React Todo-App 
 <figure>
-  <img src="https://github.com/masoumehmohebbi/react-todo-app/main/App-Image.PNG" />
+  <img src="https://github.com/masoumehmohebbi/react-todo-app/blob/main/App-Image.PNG"/>
 </figure>
 ## Technologies used in this App
 
