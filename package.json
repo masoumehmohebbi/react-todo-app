@@ -1,5 +1,4 @@
 {
-  "homepage": "http://masoumehmohebbi.github.io/react-todo-app",
   "name": "my-project",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +8,6 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d src"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
