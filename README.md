@@ -11,21 +11,18 @@ A React Todo-App
    <li>SweetAlert</li>
 </ul>
 
-## The reason for developing this site
-It was a challenge for me to develop a finalized figma file with TailwindCss. This site contains 5 pages that are fully responsive.
-Also it was a challenge for me to develope vanilla JavaScript components and reuse it on different pages.
+## The reason for developing this app
+This is my first project with reactJs. Working with react-hooks. And also working with the sweetAlert library was a challenge for me.
 
 ## Development setup
 
 #### First, clone the project:
-git clone https://github.com/masoumehmohebbi/nike-shop/
+git clone https://github.com/masoumehmohebbi/react-todo-app/
 
 #### Then, install necessary npm packages:
 npm i
 #### Finally, run the `dev` script and preview project on a local server:
-npm run dev-tw
-
-#### In order to format the code with Prettier, I uploaded prittier config file ".prettierrc".
+npm run dev
 
 ## Author
 
