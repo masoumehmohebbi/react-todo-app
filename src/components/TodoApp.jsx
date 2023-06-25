@@ -7,7 +7,8 @@ import TodoUpate from "./TodoUpdate";
 import Swal from 'sweetalert2'
 
 const TodoApp = () => {
-    const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("todos")))
+    const [todos, setTodos] = useState([])
+    // const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("todos")))
     const [updateData , setUpdateData] = useState('')
     const [selectedOption , setSelectedOption] = useState('All')
     const [filteredTodo , setFilteredTodo] = useState([])
@@ -33,9 +34,9 @@ const TodoApp = () => {
         filterTodosHandler(selectedOption.value)
     }, [todos , selectedOption ]);
 
-    useEffect(() => {  
-        localStorage.setItem("todos", JSON.stringify(todos));
-    }, [todos]);
+    // useEffect(() => {  
+    //     localStorage.setItem("todos", JSON.stringify(todos));
+    // }, [todos]);
     
     const cancelUpdateHandler = () =>{
         setUpdateData('')
