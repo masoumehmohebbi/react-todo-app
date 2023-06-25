@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import { BiSolidCheckCircle, BiSolidPencil, BiSolidTrash} from "react-icons/bi";
-import PropTypes from 'prop-types';
 
 const Todo = ({todo, onEdit , onDelete, onUpdate, todos}) => {
     const todoContainer = useRef()
@@ -35,13 +34,5 @@ const Todo = ({todo, onEdit , onDelete, onUpdate, todos}) => {
         </section>
     );
 }
-
-Todo.propTypes = {
-  todo: PropTypes.func.isRequired,
-  onEdit: PropTypes.func.isRequired,
-  onDelete: PropTypes.func.isRequired,
-  onUpdate: PropTypes.func.isRequired,
-  todos: PropTypes.func.isRequired
-};
 
 export default Todo;

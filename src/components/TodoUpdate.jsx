@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import PropTypes from 'prop-types';
 
 const TodoUpate = ({cancelUpdateHandler , updateData , setUpdateData , updateDataHandler}) => {
    const changeTodoHandler = (e) =>{
@@ -35,12 +34,5 @@ const TodoUpate = ({cancelUpdateHandler , updateData , setUpdateData , updateDat
         </form>
      );
 }
-
-TodoUpate.propTypes = {
-    cancelUpdateHandler: PropTypes.func.isRequired,
-    updateData: PropTypes.func.isRequired,
-    setUpdateData: PropTypes.func.isRequired,
-    updateDataHandler: PropTypes.func.isRequired
-};
 
 export default TodoUpate;
