@@ -1,4 +1,5 @@
 import Select from 'react-select';
+import PropTypes from 'prop-types';
 
 const options = [
     { value: 'All', label: 'All' },
@@ -58,5 +59,11 @@ const NavBar = ({selectedOption , onChange , unCompletedTodo}) => {
         
      );
 }
- 
+
+NavBar.propTypes = {
+  selectedOption: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
+  unCompletedTodo: PropTypes.func.isRequired
+};
+
 export default NavBar;
