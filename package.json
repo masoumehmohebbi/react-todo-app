@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": " gh-pages -d dist"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
