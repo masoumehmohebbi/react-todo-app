@@ -23,9 +23,9 @@ git clone https://github.com/masoumehmohebbi/react-todo-app/
 
 #### Then, install necessary npm packages:
 npm i
+
 #### Finally, run the `dev` script and preview project on a local server:
 npm run dev
 
 ## Author
-
 <a href="https://www.linkedin.com/in/masoume-mohebbi-838058227">Masoume mohebbi</a>
