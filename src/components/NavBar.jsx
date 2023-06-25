@@ -4,7 +4,7 @@ const options = [
     { value: 'Completed', label: 'Completed' },
     { value: 'Uncompleted', label: 'Uncompleted' },
 ];
-
+   /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 const NavBar = ({selectedOption , onChange , unCompletedTodo}) => {
 

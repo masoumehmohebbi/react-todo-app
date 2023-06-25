@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-
+   /* eslint-disable react/prop-types */
 const TodoUpate = ({cancelUpdateHandler , updateData , setUpdateData , updateDataHandler}) => {
    const changeTodoHandler = (e) =>{
     const newEntry = {

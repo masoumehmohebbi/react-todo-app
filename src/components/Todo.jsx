@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { BiSolidCheckCircle, BiSolidPencil, BiSolidTrash} from "react-icons/bi";
-
+   /* eslint-disable react/prop-types */
 const Todo = ({todo, onEdit , onDelete, onUpdate, todos}) => {
     const todoContainer = useRef()
     
