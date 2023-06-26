@@ -6,9 +6,17 @@ import TodoList from "./TodoList";
 import TodoUpate from "./TodoUpdate";
 import Swal from 'sweetalert2'
 
+const getLocalTodos = () =>{
+    const list = localStorage.getItem('todosList')
+    if (list){
+        return JSON.parse(localStorage.getItem('todosList'))
+    }else{
+        return []
+    }
+}
+
 const TodoApp = () => {
-    const [todos, setTodos] = useState([])
-    // const [todos, setTodos] = useState(JSON.parse(localStorage.getItem("todos")))
+    const [todos, setTodos] = useState(getLocalTodos())
     const [updateData , setUpdateData] = useState('')
     const [selectedOption , setSelectedOption] = useState('All')
     const [filteredTodo , setFilteredTodo] = useState([])
@@ -30,14 +38,12 @@ const TodoApp = () => {
                 setFilteredTodo(todos)
         }
     }
+
     useEffect(() => {  
         filterTodosHandler(selectedOption.value)
+        localStorage.setItem("todosList", JSON.stringify(todos));
     }, [todos , selectedOption ]);
 
-    // useEffect(() => {  
-    //     localStorage.setItem("todos", JSON.stringify(todos));
-    // }, [todos]);
-    
     const cancelUpdateHandler = () =>{
         setUpdateData('')
     }
@@ -53,8 +59,9 @@ const TodoApp = () => {
         const newTodo = {id:Math.floor(Math.random()*1000), title:inputTodo  , isCompleted:false}
 
         const index = todos.findIndex(t => t.title === inputTodo)
-        if (index) {
             console.log(index);
+
+        if (index) {
             
             (index === -1) ? setTodos([...todos,newTodo]) : Swal.fire({
                 text : "This Todo Is Already Exist!!",
