@@ -11,6 +11,7 @@ A React Todo-App
   <li>ReactJs</li>
   <li>ReactHooks</li>
    <li>SweetAlert</li>
+   <li>Framer motion</li>
 </ul>
 
 ## The reason for developing this app
