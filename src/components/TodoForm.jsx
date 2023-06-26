@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import { motion } from "framer-motion";
 
 const TodoForm = (props) => {
     const [input , setInput] = useState("")
@@ -41,7 +42,16 @@ const TodoForm = (props) => {
             className="-xs:w-[90%] rounded-md flex-1 p-1 outline-none focus:ring-1 shadow-lg
             focus:ring-[#f97316] focus:border-[#f97316] border-[#f97316] border bg-[#fff7ed]" />
         
-            <button className="bg-[#f97316] text-white p-1 px-2 ml-3 rounded-md shadow-lg" type="submit">Add Task</button>
+            <motion.button 
+                whileHover = {{
+                    scale: 1.1,
+                    boxShadow : '0px 0px 7px #fff7ed',
+                    transition: {delay:0.2,  type:'tween', duration:0.5}
+                }}
+                
+                className="bg-[#f97316] text-white p-1 px-2 ml-3 rounded-md shadow-lg" type="submit">
+                Add Task
+            </motion.button>
           
         </form>
      );

@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+
    /* eslint-disable react/prop-types */
 const TodoUpate = ({cancelUpdateHandler , updateData , setUpdateData , updateDataHandler}) => {
    const changeTodoHandler = (e) =>{
@@ -25,11 +27,25 @@ const TodoUpate = ({cancelUpdateHandler , updateData , setUpdateData , updateDat
         
 
             <span>
-                <button 
+                <motion.button 
+                    whileHover = {{
+                        scale: 1.1,
+                        boxShadow : '0px 0px 7px #fff7ed',
+                        transition: {delay:0.2,  type:'tween', duration:0.5}
+                    }}
                     className="bg-[#f97316] text-white p-1 px-2 ml-3 rounded-md shadow-lg" 
                     onClick={updateDataHandler}
-                    type="submit">Update</button>
-                <button onClick={cancelUpdateHandler} className="bg-[#f97316] text-white p-1 px-2 ml-3 rounded-md shadow-lg" type="submit">Cancle</button>
+                    type="submit">Update
+                </motion.button>
+
+                <motion.button 
+                    whileHover = {{
+                        scale: 1.1,
+                        boxShadow : '0px 0px 7px #fff7ed',
+                        transition: {delay:0.2,  type:'tween', duration:0.5}
+                    }}
+
+                    onClick={cancelUpdateHandler} className="bg-[#f97316] text-white p-1 px-2 ml-3 rounded-md shadow-lg" type="submit">Cancle</motion.button>
             </span>
         </form>
      );

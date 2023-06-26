@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 import TodoUpate from "./TodoUpdate";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 const getLocalTodos = () =>{
     const list = localStorage.getItem('todosList')
@@ -118,6 +118,7 @@ const TodoApp = () => {
             <TodoList editHandler = {editHandler} 
                 deleteHandler = {deleteHandler} 
                 todos = {filteredTodo}
+                updateData = {updateData}
                 setUpdateData = {setUpdateData}
                 />
         </section>
