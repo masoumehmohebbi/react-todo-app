@@ -69,7 +69,7 @@ const TodoApp = () => {
                 icon: "warning",
                 buttonsStyling: false,
                 customClass: {
-                    confirmButton: "outline-none bg-[#f97316] text-white px-4 py-2 rounded-md hover:ring-2 hover:ring-offset-2 hover:ring-[#f97316]",
+                    confirmButton: "outline-none bg-primary text-white px-4 py-2 rounded-md hover:ring-2 hover:ring-offset-2 hover:ring-primary",
                     htmlContainer: "text-2xl text-slate-800",
 
                 },

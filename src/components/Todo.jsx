@@ -23,7 +23,7 @@ const Todo = ({todo, onEdit , onDelete, todos , onUpdate}) => {
 
     return (  
         <motion.section {...animations} layout ref={todoContainer} 
-            className=' border-2 border-[#f97316] ring-2 ring-offset-2 ring-[#f97316] flex items-center p-2 justify-between w-[90%] break-all bg-[#fdba74] shadow-lg rounded-md'>
+            className=' border-2 border-primary ring-2 ring-offset-2 ring-primary flex items-center p-2 justify-between w-[90%] break-all bg-[#fdba74] shadow-lg rounded-md'>
            
             <span className="mr-3 w-6 h-6 text-sm flex items-center justify-center text-[#ffedd5] border-2 border-[#ffedd5] rounded-full">{todos.indexOf(todo) + 1}</span>
             <p className="flex-1"><span className={todo.isCompleted ? 'line-through text-gray-600 text-lg' : " font-bold text-lg"}>{todo.title}</span></p>

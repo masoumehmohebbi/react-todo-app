@@ -24,7 +24,7 @@ const TodoForm = (props) => {
                 
                 buttonsStyling: false,
                 customClass: {
-                    confirmButton: "outline-none bg-[#f97316] text-white px-4 py-2 rounded-md hover:ring-2 hover:ring-offset-2 hover:ring-[#f97316]",
+                    confirmButton: "outline-none bg-primary text-white px-4 py-2 rounded-md hover:ring-2 hover:ring-offset-2 hover:ring-primary",
                     htmlContainer: "text-2xl text-slate-800"
 
                 },
@@ -40,7 +40,7 @@ const TodoForm = (props) => {
         <form onSubmit={submitForm} action="#" className=" flex -xs:flex-col -xs:gap-y-3 -xs:w-full items-center w-11/12 my-6">
             <input ref={inputRef} value={input} onChange={changeHandler} type="text" placeholder="Add new todo..." 
             className="-xs:w-[90%] rounded-md flex-1 p-1 outline-none focus:ring-1 shadow-lg
-            focus:ring-[#f97316] focus:border-[#f97316] border-[#f97316] border bg-[#fff7ed]" />
+            focus:ring-primary focus:border-primary border-primary border bg-[#fff7ed]" />
         
             <motion.button 
                 whileHover = {{
@@ -49,7 +49,7 @@ const TodoForm = (props) => {
                     transition: {delay:0.2,  type:'tween', duration:0.5}
                 }}
                 
-                className="bg-[#f97316] text-white p-1 px-2 ml-3 rounded-md shadow-lg" type="submit">
+                className="bg-primary text-white p-1 px-2 ml-3 rounded-md shadow-lg" type="submit">
                 Add Task
             </motion.button>
           

@@ -12,6 +12,10 @@ export default {
       screens:{
         '-xs':  {'max': '410px'},
       },
+      colors: {
+        primary: '#f97316',
+        secondary: '#fed7aa'
+      }
     },
   },
 }

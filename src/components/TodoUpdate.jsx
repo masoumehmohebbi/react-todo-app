@@ -23,7 +23,7 @@ const TodoUpate = ({cancelUpdateHandler , updateData , setUpdateData , updateDat
                 onChange={changeTodoHandler}
                 type="text" placeholder="Update todo..."
             className="-xs:w-[90%] rounded-md flex-1 p-1 outline-none focus:ring-1 shadow-lg
-            focus:ring-[#f97316] focus:border-[#f97316] border-[#f97316] border bg-[#fff7ed]" />
+            focus:ring-primary focus:border-primary border-primary border bg-[#fff7ed]" />
         
 
             <span>
@@ -33,7 +33,7 @@ const TodoUpate = ({cancelUpdateHandler , updateData , setUpdateData , updateDat
                         boxShadow : '0px 0px 7px #fff7ed',
                         transition: {delay:0.2,  type:'tween', duration:0.5}
                     }}
-                    className="bg-[#f97316] text-white p-1 px-2 ml-3 rounded-md shadow-lg" 
+                    className="bg-primary text-white p-1 px-2 ml-3 rounded-md shadow-lg" 
                     onClick={updateDataHandler}
                     type="submit">Update
                 </motion.button>
@@ -45,7 +45,7 @@ const TodoUpate = ({cancelUpdateHandler , updateData , setUpdateData , updateDat
                         transition: {delay:0.2,  type:'tween', duration:0.5}
                     }}
 
-                    onClick={cancelUpdateHandler} className="bg-[#f97316] text-white p-1 px-2 ml-3 rounded-md shadow-lg" type="submit">Cancle</motion.button>
+                    onClick={cancelUpdateHandler} className="bg-primary text-white p-1 px-2 ml-3 rounded-md shadow-lg" type="submit">Cancle</motion.button>
             </span>
         </form>
      );

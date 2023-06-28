@@ -58,7 +58,7 @@ const NavBar = ({selectedOption , onChange , unCompletedTodo}) => {
                 transition = {{ duration: 0.9}}
 
                 className='flex gap-x-2 flex-1 items-center'>
-                <span className='w-6 h-6 rounded-full bg-[#fed7aa] flex items-center justify-center text-slate-800'>{unCompletedTodo}</span>
+                <span className='w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-slate-800'>{unCompletedTodo}</span>
                 <span className='text-slate-800 text-sm font-bold'>Todos are not completed!</span>
             </motion.div>
             <Select
